@@ -1,4 +1,4 @@
-# react-native-yarn-workspaces - multiple workspaces
+# workspaces with shared packages for react native apps
 
 ```
 cd react-native-yarn-workspaces && yarn install
