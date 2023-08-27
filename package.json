@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": {
+    "packages": ["packages/*"],
+    "nohoist": [
+      "**/@react-native-async-storage/async-storage",
+      "**/react",
+      "**/react-dom",
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-codegen"
+    ]
+  },
+  "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
+    "adresartruhlaru:start": "yarn workspace @monorepo/adresartruhlaru start",
+    "adresartruhlaru:ios": "yarn workspace @monorepo/adresartruhlaru ios",
+    "adresartruhlaru:android": "yarn workspace @monorepo/adresartruhlaru android",
+    "walkplaces:start": "yarn workspace @monorepo/walkplaces start",
+    "walkplaces:ios": "yarn workspace @monorepo/walkplaces ios",
+    "walkplaces:android": "yarn workspace @monorepo/walkplaces android"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
