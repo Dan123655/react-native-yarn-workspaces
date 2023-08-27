@@ -1,9 +1,9 @@
-# monorepo - multiple workspaces
+# react-native-yarn-workspaces - multiple workspaces
 
 kickoff
 
 ```
-cd monorepo && yarn install
+cd react-native-yarn-workspaces && yarn install
 
 ```
 cd packages/<app_name>/ios && pod install
