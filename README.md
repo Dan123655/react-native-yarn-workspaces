@@ -1,6 +1,7 @@
 # workspaces with shared packages for react native apps
 
 ```
+git clone git@github.com:Dan123655/react-native-yarn-workspaces.git
 cd react-native-yarn-workspaces && yarn install
 ```
 ```
